@@ -30,9 +30,7 @@ nav li
     margin: 0.5rem;
     text-decoration: none;
 }
-
 .user_input
-
 {
     display: flex;
     justify-content: center;
@@ -66,9 +64,70 @@ nav li
 .tasks #task_container
 {
     border: 2px solid black;
-    width: 200px;
-    height: 200px;  
+    width: 250px;
+    height: 250px;
+    overflow-y: auto;  
+    
 }
+
+.tasks_list
+{
+    display: flex;
+    text-decoration: none;
+    flex: 1;
+}
+
+.main_container
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    color: black;
+    align-items: center;
+    height: 2rem;
+}
+
+.completed_tasks_container
+{
+    
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+    overflow-y: auto;  
+
+}
+#completed_tasks_container_main
+{
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+    overflow-y: auto;     
+}
+.completed_tasks_list
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    color: black;
+    align-items: center;
+    height: 2rem;
+    word-wrap: break-word;
+    text-decoration: line-through;
+
+}
+
+#schedule_tasks
+{
+
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+    overflow-y: auto; 
+
+}
+
+
+
 @media (min-width: 300px) and (max-width: 768px)
 {
     body
@@ -140,6 +199,8 @@ nav li
         display: flex;
         color: white;
     }
+
+   
     
 
     
