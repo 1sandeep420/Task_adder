@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-list</title>
+    <link rel="stylesheet" href="../ToDoList/src/Index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <img src="../To-do-list/WAssets/Checklist-Background-PNG.png">
+        <ul id="menu-items">
+            <li>My Tasks </li>
+            <li>Completed </li>
+            <li>Settings</li>
+            <a id="close">Close ✖</a>
+        </ul>
+       
+        <div id="menu-icon">&#9776;</div>
+    </nav>
+    <main>
+        <div class="user_input">
+            <form>
+                <input id="input_box" type="text" placeholder=" Enter the task" required>
+                <button id="to_do_button" type="submit">Add</button>
+            </form>
+
+            <div class="select">
+                <select name="todos" id="filter-todo">
+                    <option value="All">All</option>
+                    <option value="Completed">Completed</option>
+                    <option value="Pending">Pending</option>
+                </select>
+            </div>
+        </div>
+        <div class="tasks" style="display: flex; justify-content: space-around; padding-top: 2rem;">
+            <div id="task_container">   
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="../To-do-list/Index.js"></script>
+    
+</body>
+</html>
